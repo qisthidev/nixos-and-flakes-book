@@ -15,6 +15,7 @@ https://nixos-and-flakes.thiscute.world/
 
 ### Community-Maintained Versions:
 
+- **Bahasa Indonesia**: This repository (https://github.com/qisthidev/nixos-and-flakes-book)
 - **Versão em Português**: https://nixos-and-flakes.ieda.me/
 - **日本語版**: https://nixos-and-flakes-ja.hayao0819.com/
 
