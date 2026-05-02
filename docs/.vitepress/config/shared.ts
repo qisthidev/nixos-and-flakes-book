@@ -146,8 +146,8 @@ function getJSONLD(pageData: PageData) {
   "@context":"http://schema.org",
   "@type":"WebSite",
   "url":"https:\/\/nixos-and-flakes.thiscute.world\/",
-  "inLanguage":"en",
-  "description":"An unofficial and opinionated book for beginners",
+  "inLanguage":"id-ID",
+  "description":"Buku tidak resmi dan opini untuk pemula",
   "name":"${pageData.title}"
 }`
   } else if (pageData.relativePath === "zh/index.md") {
@@ -160,7 +160,7 @@ function getJSONLD(pageData: PageData) {
   "name":"${pageData.title}"
 }`
   } else {
-    let lang = pageData.relativePath.startsWith("zh/") ? "zh-CN" : "en"
+    let lang = pageData.relativePath.startsWith("zh/") ? "zh-CN" : "id-ID"
     let url = `https:\/\/nixos-and-flakes.thiscute.world\/${pageData.relativePath
       .replace(/\.md$/, "")
       .replace(/\/index\$/, "/")}`
