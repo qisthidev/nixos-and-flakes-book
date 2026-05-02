@@ -15,7 +15,7 @@ export const shared = defineConfig({
   // SEO Improvement - sitemap.xml & robots.txt
   buildEnd: async ({ outDir }) => {
     sitemap({
-      hostname: "https://nixos-and-flakes.thiscute.world/",
+      hostname: "https://nix.qisthi.dev/",
       outDir: outDir,
       generateRobotsTxt: true,
     })
@@ -65,14 +65,14 @@ export const shared = defineConfig({
       "meta",
       {
         name: "og:image",
-        content: "https://nixos-and-flakes.thiscute.world/nixos-and-flakes-book.webp",
+        content: "https://nix.qisthi.dev/nixos-and-flakes-book.webp",
       },
     ],
     [
       "meta",
       {
         name: "twitter:image",
-        content: "https://nixos-and-flakes.thiscute.world/nixos-and-flakes-book.webp",
+        content: "https://nix.qisthi.dev/nixos-and-flakes-book.webp",
       },
     ],
 
@@ -145,7 +145,7 @@ function getJSONLD(pageData: PageData) {
     return `{
   "@context":"http://schema.org",
   "@type":"WebSite",
-  "url":"https:\/\/nixos-and-flakes.thiscute.world\/",
+  "url":"https:\/\/nix.qisthi.dev\/",
   "inLanguage":"id-ID",
   "description":"Buku tidak resmi dan opini untuk pemula",
   "name":"${pageData.title}"
@@ -154,14 +154,14 @@ function getJSONLD(pageData: PageData) {
     return `{
   "@context":"http://schema.org",
   "@type":"WebSite",
-  "url":"https:\/\/nixos-and-flakes.thiscute.world\/zh\/",
+  "url":"https:\/\/nix.qisthi.dev\/zh\/",
   "inLanguage":"zh-CN",
   "description":"一份非官方的新手指南",
   "name":"${pageData.title}"
 }`
   } else {
     let lang = pageData.relativePath.startsWith("zh/") ? "zh-CN" : "id-ID"
-    let url = `https:\/\/nixos-and-flakes.thiscute.world\/${pageData.relativePath
+    let url = `https:\/\/nix.qisthi.dev\/${pageData.relativePath
       .replace(/\.md$/, "")
       .replace(/\/index\$/, "/")}`
     return `{
