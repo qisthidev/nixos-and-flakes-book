@@ -9,20 +9,20 @@ export default defineConfig({
   title: "NixOS & Flakes Book",
 
   rewrites: {
-    "en/:rest*": ":rest*",
+    "id/:rest*": ":rest*",
   },
   locales: {
     root: {
+      label: "Bahasa Indonesia",
+      ...id,
+    },
+    en: {
       label: "English",
-      ...en,
+      link: "https://nixos-and-flakes.thiscute.world",
     },
     zh: {
       label: "简体中文",
       ...zh,
-    },
-    id: {
-      label: "Bahasa Indonesia",
-      ...id,
     },
     pt: {
       label: "Português",

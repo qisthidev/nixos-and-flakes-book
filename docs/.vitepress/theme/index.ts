@@ -28,11 +28,12 @@ export default {
 
         mapping: "pathname", // default: `pathname`
         inputPosition: "top", // default: `top`
-        lang: "en-US", // `zh-CN` | `en-US` | `ja-JP` | ...
+        lang: "id", // `zh-CN` | `en-US` | `ja-JP` | `id` | ...
         // i18n setting (Note: This configuration will override the default language set by lang)
         // Configured as an object with key-value pairs inside:
         // [your i18n configuration name]: [corresponds to the language pack name in Giscus]
         locales: {
+          "id-ID": "id",
           "zh-CN": "zh-CN",
           "en-US": "en",
           "ja-JP": "ja",
