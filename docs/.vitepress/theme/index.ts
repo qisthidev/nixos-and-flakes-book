@@ -2,13 +2,19 @@
 import DefaultTheme from "vitepress/theme"
 import giscusTalk from "vitepress-plugin-comment-with-giscus"
 import { useData, useRoute } from "vitepress"
-import { toRefs } from "vue"
+import { toRefs, h } from "vue"
+import CopyMarkdown from "./components/CopyMarkdown.vue"
 
 // custom CSS
 import "../style/print.css"
 
 export default {
   ...DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'layout-bottom': () => h(CopyMarkdown)
+    })
+  },
   enhanceApp(ctx) {
     DefaultTheme.enhanceApp(ctx)
     // ...
